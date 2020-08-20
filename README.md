@@ -1,0 +1,2 @@
+# Escape_Game_android
+以AndroidStudio撰寫簡易密室脫逃遊戲
