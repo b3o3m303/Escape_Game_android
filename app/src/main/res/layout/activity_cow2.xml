@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.escape.escape_new.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="294dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="95dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/log"
+            android:layout_alignParentEnd="true"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <ImageButton
+                android:id="@+id/b1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bookbr90" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:elevation="0dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/mes" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/brush1" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/control" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/chickfood" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/log"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/gridLayout"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/key" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="496dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <ImageView
+            android:id="@+id/cowhouse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            app:srcCompat="@drawable/cowhouse2" />
+
+        <ImageView
+            android:id="@+id/cowhouse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/cowhouse3" />
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:background="#ff7f50"
+            app:srcCompat="@drawable/left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            app:srcCompat="@drawable/right" />
+
+        <Button
+            android:id="@+id/btgrass"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="98dp"
+            android:layout_toEndOf="@+id/left"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/wox"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/btgrass"
+            android:layout_alignTop="@+id/btgrass"
+            android:layout_marginEnd="23dp"
+            android:layout_marginTop="32dp"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/sudoku"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/notice"
+            android:layout_alignEnd="@+id/notice"
+            android:layout_marginEnd="15dp"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/notice"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/btgrass"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

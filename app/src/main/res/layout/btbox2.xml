@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="95dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/log"
+            android:layout_alignParentEnd="true"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <ImageButton
+                android:id="@+id/b1"
+                app:srcCompat="@drawable/bookbr90"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                app:srcCompat="@drawable/mes"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:elevation="0dp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                app:srcCompat="@drawable/brush1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                app:srcCompat="@drawable/control"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                app:srcCompat="@drawable/chickfood"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                app:srcCompat="@drawable/key"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/log"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/gridLayout"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+        </GridLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/boxx"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:layout_alignParentBottom="true"
+            android:background="#815136"/>
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/showtext" />
+
+        <TextView
+            android:id="@+id/showtext"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="請輸入密碼:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textpwd"
+            android:layout_alignBottom="@+id/textpwd"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_marginEnd="42dp"
+            android:layout_alignTop="@+id/textpwd"
+            android:layout_toStartOf="@+id/gridLayout" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="19dp"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:background="#00000000"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:background="#C3C3C3"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/bigkey_opt" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:background="#00000000"
+            android:visibility="invisible" />
+
+        <!-->其他<-->
+
+    </RelativeLayout>
+</LinearLayout>

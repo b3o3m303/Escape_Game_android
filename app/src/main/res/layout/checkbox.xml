@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/btlayout"
+            android:layout_width="600dp"
+            android:layout_height="300dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/gridLayout">
+
+            <ToggleButton
+                android:id="@+id/tob1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob5"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob6"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob7"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob8"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/tob9"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/btlayout"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btbrush"
+            android:layout_width="550dp"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="22dp"
+            android:layout_weight="1.64"
+            android:background="#00000000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/btlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1.64"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/brush"
+            android:layout_width="800dp"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/exit"
+            android:background="#00000000"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/bigbrush" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout" />
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="95dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/log"
+            android:layout_alignParentEnd="true"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <ImageButton
+                android:id="@+id/b1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bookbr90" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:elevation="0dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/mes" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/brush1" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/control" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/chickfood" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/log"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/gridLayout"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/key" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

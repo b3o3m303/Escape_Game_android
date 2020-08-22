@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="600dp"
+        android:layout_height="294dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="95dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/log"
+            android:layout_alignParentEnd="true"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <ImageButton
+                android:id="@+id/b1"
+                app:srcCompat="@drawable/bookbr90"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                app:srcCompat="@drawable/mes"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:elevation="0dp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                app:srcCompat="@drawable/brush1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                app:srcCompat="@drawable/control"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                app:srcCompat="@drawable/chickfood"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                app:srcCompat="@drawable/key"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/log"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/gridLayout"
+                android:background="#ffffffff"
+                android:visibility="invisible" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/coop"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/log"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="87dp"
+            android:layout_toStartOf="@+id/right"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/clickcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="49dp"
+            android:background="#00000000"
+            android:layout_above="@+id/log"
+            android:layout_toEndOf="@+id/left" />
+
+        <Button
+            android:id="@+id/clickcheck2"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/clickcheck"
+            android:layout_alignStart="@+id/coop"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/nofood"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:srcCompat="@drawable/chick"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/food1"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/coop"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="47dp"
+            android:layout_toStartOf="@+id/clickcheck2"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/food123"
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/food123" />
+
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            app:srcCompat="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="41dp"
+            app:srcCompat="@drawable/left"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/right" />
+
+        <!-->其他<-->
+
+    </RelativeLayout>
+
+</LinearLayout>

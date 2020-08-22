@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            app:srcCompat="@drawable/cont" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="95dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/log"
+            android:layout_alignParentEnd="true"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <ImageButton
+                android:id="@+id/b1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/bookbr90" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:elevation="0dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/mes" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/brush1" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/control" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/chickfood" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/log"
+                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@+id/gridLayout"
+                android:background="#ffffffff"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/key" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btcont"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="106dp"
+            android:layout_marginStart="191dp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/nof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/no" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="26dp"
+            android:layout_toStartOf="@+id/gridLayout"
+            android:background="#00000000"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

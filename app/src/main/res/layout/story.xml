@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="600dp"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorButtonNormal"
+            app:srcCompat="@drawable/buttonbackground" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp"
+            android:fontFamily="sans-serif"
+            android:text="你向一個農場主人承租農場，體驗農村生活，\n剛到農場的第二天，颱風來襲，\n強風將土石、樹木吹得亂七八糟，\n擋住了大部分的窗戶跟門板。\n僅剩的一扇門從門外被反鎖了，\n看來唯一的希望是成功打開那扇門脫逃。\n但是，鑰匙在哪裏呢…"
+            android:textAlignment="center"
+            android:textColor="?android:attr/statusBarColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>
