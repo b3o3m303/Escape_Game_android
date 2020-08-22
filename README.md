@@ -6,7 +6,9 @@
 icon & app name
 
 ![image](https://github.com/b3o3m303/Escape_Game_android/blob/master/fig/8.jpg)
+
 遊戲畫面
+
 ![image](https://github.com/b3o3m303/Escape_Game_android/blob/master/fig/1.png)
 ![image](https://github.com/b3o3m303/Escape_Game_android/blob/master/fig/2.png)
 ![image](https://github.com/b3o3m303/Escape_Game_android/blob/master/fig/3.png)
